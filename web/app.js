@@ -46,10 +46,17 @@ app.use((err, req, res, next) => {
 
 */
 
+// change 'db' to 'localhost' when not running in container 
+let mongoUrl;
+if (process.env.NODE_ENV == 'production') {
+  mongoUrl = 'mongodb://db:27017/nodeSalesLeads';
+} else { 
+  mongoUrl = 'mongodb://localhost:27017/nodeSalesLeads'
+}
 
 const db = mongoose
   .connect(
-  'mongodb://db:27017/nodeSalesLeads', // change 'db' to 'localhost' when not running in container 
+  mongoUrl, 
   {
     useCreateIndex: true,
     useNewUrlParser: true,
