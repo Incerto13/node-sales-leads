@@ -1,0 +1,36 @@
+<%- include('./includes/header.ejs') %>
+  
+<body>
+
+  <%- include('./includes/navbar.ejs') %>
+
+  <div class="container">
+      <div class="row" class="align-items-center">
+          <div class="col-md-6 order-md-1 text-center text-md-left pr-md-5">
+             <h1 class="mb-3">Sales Leads</h1>
+                <p class="lead">Keep track of new sales leads by entering their email 
+                address here.
+                </p>
+             
+              <form action="/" method="POST" class="input-group mb-3">
+                <input name="leadEmail" id="leadEmail" type="email" 
+                  placeholder="Enter email address here" class="form-control input-group-append">
+                  <input type="submit" value="Submit" class="btn btn-primary">
+              </form>
+          </div>
+      </div>
+
+          
+        </div>
+      <div>
+
+  </div>
+
+
+</body>
+
+  
+<%- include('./includes/footer.ejs') %>
+
+<script src="/js/leads.js"></script>
+

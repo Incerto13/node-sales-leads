@@ -1,0 +1,32 @@
+[
+  {
+    "_id" : ObjectId("5cb7ad4fea21936012bdee96"),
+    "email" : "codex@comcast.net",
+    "__v" : 0
+  },
+  {
+    "_id" : ObjectId("5cb7ad89de1e376045d00826"),
+    "email" : "carroll44@msn.com",
+    "__v" : 0
+  },
+  {
+    "_id" : ObjectId("5cb7af82e6948e6146caed6a"),
+    "email" : "aschmitz@att.net",
+    "__v" : 0
+  },
+  {
+    "_id" : ObjectId("5cb8becb7909ea51250167d1"),
+    "email" : "kayvonf@gmail.com",
+    "__v" : 0
+  },
+  {
+    "_id" : ObjectId("5cb8c2fc7909ea51250167d3"),
+    "email" : "pjacklam@live.com",
+    "__v" : 0
+  },
+  {
+    "_id" : ObjectId("5cb8d6f3ca1a39647da0f082"),
+    "email" : "klaudon97@hotmail.com",
+    "__v" : 0
+  }
+]

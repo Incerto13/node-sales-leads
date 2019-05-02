@@ -1,0 +1,42 @@
+<%- include('../includes/header.ejs') %>
+
+<body>
+ <%- include('../includes/navbar.ejs') %>
+
+    <div class="container">
+      <div class="row" class="align-items-center">
+          <div class="col-md-6 order-md-1 text-center text-md-left pr-md-5">
+
+              <h1>Lead</h1>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Email</th>
+                     <th scope="col">Actions</th>
+                     <th scope="col">Delete</th>
+                  </tr>
+                </thead>
+                  <tbody>
+                        <tr id="<%= lead._id %>">
+                          <td>
+                              <span><%= lead.email %></span>
+                          </td>
+                          <td>
+                              <a href="/lead/<%= lead._id %>/edit">Edit</a>
+                          </td>
+                          <td>
+                            <form action="/lead/<%= lead._id %>/delete" method="POST" class="input-group mb-3">
+                                <input type="submit" value="Delete" class="btn btn-primary">
+                            </form>
+                          </td>
+                        </tr> 
+                  </tbody>
+              </table>
+
+        </div>
+      </div>
+    </div>
+
+</body>
+
+<%- include('../includes/footer.ejs') %>
