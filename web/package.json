@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "if [$NODE_ENV == 'production']; then node app.js; else DEBUG=app,app:* nodemon app.js; fi"
+    "start": "./scripts/start.sh"
   },
   "author": "",
   "license": "ISC",
@@ -22,20 +22,21 @@
     "mongodb": "^3.2.3",
     "mongoose": "^5.5.2",
     "morgan": "^1.9.1",
-    "nodemon": "^1.18.11",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "path": "^0.12.7",
     "validator": "^10.11.0"
   },
+  "devDependencies": {
+    "nodemon": "^1.18.11"
+  },
   "nodemonConfig": {
     "restartable": "rs",
     "ignore": [
       "node_modules/**/node_modules"
-    ],
+    ]
+  },
     "env": {
-      "NODE_ENV": "development",
       "PORT": 3000
     }
   }
-}
